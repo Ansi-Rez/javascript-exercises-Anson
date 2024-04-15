@@ -1,5 +1,5 @@
 const fibonacci = function(num) {
-    sequence = [1];
+    let sequence = [1];
     if(num == 0)
     {
         return 0;
@@ -18,7 +18,7 @@ const fibonacci = function(num) {
             }
             else
             {
-                sequence.push(sequence[i-1] + sequence[i-2]);
+                sequence.push(sequence[i-2] + sequence[i-1]);
             }
         }
         return sequence.pop();
